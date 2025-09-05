@@ -1,7 +1,11 @@
-from agents.debate import DebateSystem
-from pathlib import Path
+
 import json
 import csv
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from agents.debate import DebateSystem
+
 
 DATA_DIR = Path(__file__).resolve().parents[1] / 'data'
 DATA_DIR.mkdir(exist_ok=True)
